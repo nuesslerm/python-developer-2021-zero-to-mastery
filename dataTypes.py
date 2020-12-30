@@ -469,6 +469,7 @@ my_set2 = {1, 2, 3}
 my_set3 = {4, 5, 6}
 your_set = {4, 5, 6, 7, 8, 9, 10}
 
+
 print(my_set.difference(your_set))  # doesn't update set, just reurns the difference
 # print(my_set.discard(5)) # modifies set in place
 # print(my_set.difference_update(your_set)) # modifies set in place, and removes items that are different
