@@ -551,7 +551,7 @@ def outer():
 
 outer()
 
-# why do we have scope?
+# why do we need/have scope?
 # among other things it allows us to preserve memory by only defining funcion scope variables in memory
 # when a function is called, after function execution the python garbage collector can clear up the
 # memory usage by destroying the function scope variables
