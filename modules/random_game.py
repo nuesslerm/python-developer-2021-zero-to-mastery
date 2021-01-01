@@ -15,18 +15,23 @@ except ValueError:
     print("Please enter only integers for script args!")
     exit()
 
+to_guess = randint(first_num, second_num)
+print(to_guess)
 
 while True:
-    answer = input(f"Guess an integer between {first_num} and {second_num} ")
-
     try:
-        if float(answer) % 1 != 0:
+        parsed_input = float(
+            input(f"Guess an integer between {first_num} and {second_num}: ")
+        )
+        if parsed_input % 1 != 0:
             print("Please enter an integer")
             continue
 
-        to_guess = randint(first_num, second_num)
-        guess = int(answer)
+        if not first_num <= parsed_input <= second_num:
+            print("Your guess is out of bounds of the guessing range")
+            continue
 
+        guess = int(parsed_input)
         if to_guess == guess:
             print("Congrats. You got the number right!")
             break
