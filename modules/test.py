@@ -12,6 +12,7 @@ from utility import *
 from shopping.more_shopping import shopping_cart as whatsGood
 import random as oulala
 import sys
+import pyjokes
 
 # from random import shuffle as oulala
 
@@ -56,3 +57,13 @@ print(oulala.shuffle(["a", "b", "c", 4, 5, 6]))
 # last = sys.argv[2]
 
 # print(f"hi {first} {last}")
+
+# except for the built-in modules you can also download and install extenral 3rd party modules from the internet
+# https://pypi.org/
+
+# help(pyjokes)
+# print(dir(pyjokes))
+# print(pyjokes.get_joke("de", "twister"))
+print(pyjokes.get_joke("en", "neutral"))
+# print(pyjokes.get_joke("en", "all"))
+# print(pyjokes.get_jokes("dee"))
