@@ -372,6 +372,7 @@ print(len(super_list1))
 list1 = list([1, 2, 3])
 
 print(list1)
+# issubclass(SubClass, ParentClass)
 print(issubclass(SuperList, list))  # check if class is sub-class of parent class
 print(issubclass(list, object))
 
