@@ -14,7 +14,7 @@ class TestRandomGame(unittest.TestCase):
         float_input = "asdf"
         to_guess = 8
         result = guess_numbers(float_input, to_guess)
-        self.assertEqual(result, False)
+        self.assertFalse(result)
 
     def test_guess_numbers2(self):
         """
@@ -23,7 +23,7 @@ class TestRandomGame(unittest.TestCase):
         float_input = 5
         to_guess = 6
         result = guess_numbers(float_input, to_guess)
-        self.assertEqual(result, False)
+        self.assertFalse(result)
 
     def test_guess_numbers3(self):
         """
@@ -32,8 +32,10 @@ class TestRandomGame(unittest.TestCase):
         float_input = 5
         to_guess = 5
         result = guess_numbers(float_input, to_guess)
-        self.assertEqual(result, True)
+        self.assertTrue(result)
 
+
+# print(bool(0 < "asdf" < 10)) -> results in TypeError
 
 if __name__ == "__main__":
     unittest.main()
